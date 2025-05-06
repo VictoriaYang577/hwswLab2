@@ -1,16 +1,15 @@
 # hwswLab2
-.
+
 ├── sorting_hat_ESP32/
-│   ├── sorting_hat_esp_button.ino     # Arduino sketch (main code)
-│   └── sorting_hat_model.h            # Exported ML model in C++
+│ ├── sorting_hat_esp_button.ino # Arduino sketch
+│ └── sorting_hat_model.h # Exported ML model
 ├── src/
-│   ├── sorting_hat_laptop.py          # Python script for training the model
-│   └── Sorting_Dataset.csv            # User response dataset (min 30 entries)
+│ ├── sorting_hat_laptop.py # Python model training
+│ └── Sorting_Dataset.csv # 10-question dataset
 ├── assets/
-│   └── sorting_hat_button.png         # Wiring diagram image
-├── requirements.txt                   # Python package dependencies
-├── README.md                          # Documentation (or Lab3_Report.md)
-└── video_link.txt (optional)          # Link to your demo video (or include in README)
+│ └── sorting_hat_button.png # Wiring diagram (if applicable)
+├── requirements.txt # Python dependencies
+└── README.md # This file
 
 ## 1. Are all 10 questions important?
 Not all 10 questions are equally important. After analyzing the data and running the model with various subsets, we found that removing low-impact questions such as Q6 (mystery book behavior) and Q7 (preferred pet) had little effect on accuracy. To streamline user experience, we could reduce the number of questions to 6–7 while maintaining similar performance by keeping only the most informative ones.
